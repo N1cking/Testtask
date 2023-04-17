@@ -1,0 +1,40 @@
+[13-Apr-2023 11:04:44 UTC] PHP Fatal error:  Uncaught Roots\WPConfig\Exceptions\ConstantAlreadyDefinedException: Aborted trying to redefine constant 'WP_ENVIRONMENT_TYPE'. `define('WP_ENVIRONMENT_TYPE', ...)` has already been occurred elsewhere. in /Users/rena/Local Sites/wp-recruitment-envtest/app/bedrock/vendor/roots/wp-config/src/Config.php:106
+Stack trace:
+#0 /Users/rena/Local Sites/wp-recruitment-envtest/app/bedrock/vendor/roots/wp-config/src/Config.php(26): Roots\WPConfig\Config::defined('WP_ENVIRONMENT_...')
+#1 /Users/rena/Local Sites/wp-recruitment-envtest/app/bedrock/config/application.php(57): Roots\WPConfig\Config::define('WP_ENVIRONMENT_...', 'development')
+#2 /Users/rena/Local Sites/wp-recruitment-envtest/app/bedrock/web/wp-config.php(8): require_once('/Users/rena/Loc...')
+#3 /Users/rena/Local Sites/wp-recruitment-envtest/app/bedrock/web/wp/wp-load.php(55): require_once('/Users/rena/Loc...')
+#4 /Users/rena/Local Sites/wp-recruitment-envtest/app/bedrock/web/wp/wp-blog-header.php(13): require_once('/Users/rena/Loc...')
+#5 /Users/rena/Local Sites/wp-recruitment-envtest/app/bedrock/web/index.php(6): require('/Users/rena/Loc...')
+#6 {main}
+  thrown in /Users/rena/Local Sites/wp-recruitment-envtest/app/bedrock/vendor/roots/wp-config/src/Config.php on line 106
+[13-Apr-2023 11:12:53 UTC] PHP Fatal error:  Uncaught Roots\WPConfig\Exceptions\ConstantAlreadyDefinedException: Aborted trying to redefine constant 'WP_ENVIRONMENT_TYPE'. `define('WP_ENVIRONMENT_TYPE', ...)` has already been occurred elsewhere. in /Users/rena/Local Sites/wp-recruitment-envtest/app/bedrock/vendor/roots/wp-config/src/Config.php:106
+Stack trace:
+#0 /Users/rena/Local Sites/wp-recruitment-envtest/app/bedrock/vendor/roots/wp-config/src/Config.php(26): Roots\WPConfig\Config::defined('WP_ENVIRONMENT_...')
+#1 /Users/rena/Local Sites/wp-recruitment-envtest/app/bedrock/config/application.php(57): Roots\WPConfig\Config::define('WP_ENVIRONMENT_...', 'development')
+#2 /Users/rena/Local Sites/wp-recruitment-envtest/app/bedrock/web/wp-config.php(8): require_once('/Users/rena/Loc...')
+#3 /Users/rena/Local Sites/wp-recruitment-envtest/app/bedrock/web/wp/wp-load.php(55): require_once('/Users/rena/Loc...')
+#4 /Users/rena/Local Sites/wp-recruitment-envtest/app/bedrock/web/wp/wp-blog-header.php(13): require_once('/Users/rena/Loc...')
+#5 /Users/rena/Local Sites/wp-recruitment-envtest/app/bedrock/web/index.php(6): require('/Users/rena/Loc...')
+#6 {main}
+  thrown in /Users/rena/Local Sites/wp-recruitment-envtest/app/bedrock/vendor/roots/wp-config/src/Config.php on line 106
+[13-Apr-2023 11:21:18 UTC] PHP Fatal error:  Uncaught Roots\WPConfig\Exceptions\ConstantAlreadyDefinedException: Aborted trying to redefine constant 'WP_ENVIRONMENT_TYPE'. `define('WP_ENVIRONMENT_TYPE', ...)` has already been occurred elsewhere. in /Users/rena/Local Sites/wp-recruitment-envtest/app/bedrock/vendor/roots/wp-config/src/Config.php:106
+Stack trace:
+#0 /Users/rena/Local Sites/wp-recruitment-envtest/app/bedrock/vendor/roots/wp-config/src/Config.php(26): Roots\WPConfig\Config::defined('WP_ENVIRONMENT_...')
+#1 /Users/rena/Local Sites/wp-recruitment-envtest/app/bedrock/config/application.php(57): Roots\WPConfig\Config::define('WP_ENVIRONMENT_...', 'development')
+#2 /Users/rena/Local Sites/wp-recruitment-envtest/app/bedrock/web/wp-config.php(8): require_once('/Users/rena/Loc...')
+#3 /Users/rena/Local Sites/wp-recruitment-envtest/app/bedrock/web/wp/wp-load.php(55): require_once('/Users/rena/Loc...')
+#4 /Users/rena/Local Sites/wp-recruitment-envtest/app/bedrock/web/wp/wp-blog-header.php(13): require_once('/Users/rena/Loc...')
+#5 /Users/rena/Local Sites/wp-recruitment-envtest/app/bedrock/web/index.php(6): require('/Users/rena/Loc...')
+#6 {main}
+  thrown in /Users/rena/Local Sites/wp-recruitment-envtest/app/bedrock/vendor/roots/wp-config/src/Config.php on line 106
+[13-Apr-2023 11:21:19 UTC] PHP Fatal error:  Uncaught Roots\WPConfig\Exceptions\ConstantAlreadyDefinedException: Aborted trying to redefine constant 'WP_ENVIRONMENT_TYPE'. `define('WP_ENVIRONMENT_TYPE', ...)` has already been occurred elsewhere. in /Users/rena/Local Sites/wp-recruitment-envtest/app/bedrock/vendor/roots/wp-config/src/Config.php:106
+Stack trace:
+#0 /Users/rena/Local Sites/wp-recruitment-envtest/app/bedrock/vendor/roots/wp-config/src/Config.php(26): Roots\WPConfig\Config::defined('WP_ENVIRONMENT_...')
+#1 /Users/rena/Local Sites/wp-recruitment-envtest/app/bedrock/config/application.php(57): Roots\WPConfig\Config::define('WP_ENVIRONMENT_...', 'development')
+#2 /Users/rena/Local Sites/wp-recruitment-envtest/app/bedrock/web/wp-config.php(8): require_once('/Users/rena/Loc...')
+#3 /Users/rena/Local Sites/wp-recruitment-envtest/app/bedrock/web/wp/wp-load.php(55): require_once('/Users/rena/Loc...')
+#4 /Users/rena/Local Sites/wp-recruitment-envtest/app/bedrock/web/wp/wp-blog-header.php(13): require_once('/Users/rena/Loc...')
+#5 /Users/rena/Local Sites/wp-recruitment-envtest/app/bedrock/web/index.php(6): require('/Users/rena/Loc...')
+#6 {main}
+  thrown in /Users/rena/Local Sites/wp-recruitment-envtest/app/bedrock/vendor/roots/wp-config/src/Config.php on line 106

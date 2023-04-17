@@ -1,0 +1,50 @@
+version: '3'
+services:
+  mysql:
+    image: mysql
+    volumes:
+      - ./sql:/docker-entrypoint-initdb.d
+      - ./docker/mysql/data:/var/lib/mysql
+#      - ./conf/mysql/my.cnf.hbs:/etc/mysql/my.cnf
+    environment:
+      - MYSQL_ROOT_PASSWORD=yourpassword
+      - MYSQL_DATABASE=yourdatabase
+      - MYSQL_USER=youruser
+      - MYSQL_PASSWORD=yourpassword
+
+  nginx:
+    image: nginx
+    volumes:
+      - ./conf/nginx/includes/gzip.conf.hbs:/etc/nginx/includes/gzip.conf
+      - ./conf/nginx/includes/mime-types.conf.hbs:/etc/nginx/includes/mime-types.conf
+      - ./conf/nginx/includes/restrictions.conf.hbs:/etc/nginx/includes/restrictions.conf
+      - ./conf/nginx/includes/wordpress-multi.conf.hbs:/etc/nginx/includes/wordpress-multi.conf
+      - ./conf/nginx/includes/wordpress-single.conf.hbs:/etc/nginx/includes/wordpress-single.conf
+      - ./conf/nginx/nginx.conf.hbs:/etc/nginx/nginx.conf
+      - ./conf/nginx/site.conf.hbs:/etc/nginx/site.conf
+      - ./logs/nginx:/var/log/nginx
+      - ./app:/var/www
+    depends_on:
+      - php-fpm
+      - mysql
+    ports:
+      - "80:80"
+
+  php-fpm:
+    build: ./docker/php-fpm
+    volumes:
+      - ./app:/var/www
+      - ./php/php.ini.hbs:/etc/php/7.4/fpm/php.ini
+      - ./php/php-fpm.conf.hbs:/etc/php/7.4/fpm/php-fpm.conf
+      - ./php/php-fpm.d:/etc/php/7.4/fpm/php-fpm.d
+      - ./logs/php:/var/log/php
+
+
+  phpmyadmin:
+    image: phpmyadmin
+    depends_on:
+      - mysql
+    volumes:
+      - ./conf/phpmyadmin/config.inc.php:/etc/phpmyadmin/config.inc.php
+    ports:
+      - "81:80"
